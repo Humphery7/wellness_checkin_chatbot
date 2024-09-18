@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "wellness_checkin_chatbot"
+version = "0.1.0"
+description = ""
+authors = ["computer world <faradayotuoniyo@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+contractions = "^0.1.73"
+nltk = "^3.8.1"
+pandas = "^2.2.2"
+transformers = "^4.44.0"
+streamlit = "^1.37.1"
+torch = "2.4.0"
+numpy = "2.1.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+app = "wellness_checkin_chatbot.app:run_app"
